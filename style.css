@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;   
+    position: sticky;
+    background-color: white;z-index: 3;
+    justify-content: space-around;
+}
+
+.fa-bars {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    background-color: darkblue;
+}
+
+.img1 img {
+    margin-top: -120px;
+    width: 100%;
+    height: 950px;
+}
+
+.bigbox {
+    width: 1160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: -90px;
+    background-color: darkblue;
+}
+
+.box {
+    width: 280px;
+    height: 290px;
+    background-color: white;
+    padding: 30px;
+}
+
+.icons {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.fa-plane {
+    transform: rotate(-45deg);
+}
+
+.box h1 {
+    font-size: 20px;
+    color: darkblue;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+
+.box p {
+    margin-top: 20px;
+}
+
+.text {
+    width: 100%;
+    height: 280px;
+}
+
+.text p:nth-child(1) {
+    width: 175px;
+    color: white;
+    margin: auto;
+    margin-top: 35px;
+    letter-spacing: .7px;
+    font-size: 18px;
+}
+
+.text p a {
+    color: white;
+}
+
+.text p:nth-child(2) {
+    width: 450px;
+    height: 70px;
+    color: white;
+    line-height: 25px;
+    margin: auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #303030;
+    color: white;
+}
+
+.footer p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    color: rgb(2, 200, 230);
+}
+@media(max-width:800px){
+    .bigbox{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        border: 2px solid red;
+    }
+    .box{
+        width: 95%;
+        margin: 10px;
+    }
+}
+@media(max-width:500px){
+    .img1 img{
+        height: 600px;
+        object-fit: cover;
+    }
+    .bigbox{
+        width: 100%;
+        grid-template-columns: 1fr;
+        border: 2px solid red;
+    }
+    .box{
+        width: 350px;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
